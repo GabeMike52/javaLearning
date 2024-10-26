@@ -14,7 +14,7 @@ public class OpticCalculator {
             System.out.println("2 - Comprimento de onda");
             System.out.println("3 - Índice de refração");
             System.out.println("4 - Abertura numérica");
-            System.out.println("5 - ");
+            System.out.println("0 - Encerrar programa");
             option = read.nextByte();
             if (option == 1) {
                 System.out.println("Velocidade de Fase");
@@ -66,6 +66,6 @@ public class OpticCalculator {
                     System.out.println("A abertura numérica é igual a: " + aberturaNum);
                 }
             }
-        } while (option < 6);
+        } while (option < 6 && option != 0);
     }
 }
